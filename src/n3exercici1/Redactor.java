@@ -13,6 +13,10 @@ public class Redactor {
         this.sou = sou;
     }
 
+    public String getDNI() {
+        return DNI;
+    }
+
     public String getNom() {
         return nom;
     }
