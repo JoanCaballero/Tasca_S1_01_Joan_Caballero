@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cb9f7cd-c17e-49f1-8922-3cb73d1a2f0c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tasca_S1_01_Joan_Caballero.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/n1excercici2/Cotxe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/n1excercici2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/n1exercici1/Corda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/n1exercici1/Instruments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/n1exercici1/Percussió.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/n1exercici1/Vent.java" afterDir="false" />
-    </list>
+    <list default="true" id="1cb9f7cd-c17e-49f1-8922-3cb73d1a2f0c" name="Changes" comment="Main dins del ex 1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,6 +73,14 @@
       <option name="presentableId" value="Default" />
       <updated>1699868149840</updated>
     </task>
+    <task id="LOCAL-00001" summary="Main dins del ex 1">
+      <created>1699949460700</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699949460700</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,5 +93,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Main dins del ex 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main dins del ex 1" />
   </component>
 </project>
