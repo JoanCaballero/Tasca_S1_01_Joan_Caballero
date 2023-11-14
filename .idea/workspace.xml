@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cb9f7cd-c17e-49f1-8922-3cb73d1a2f0c" name="Changes" comment="Correcció n1exercici2">
-      <change afterPath="$PROJECT_DIR$/src/n3exercici1/Main.java" afterDir="false" />
+    <list default="true" id="1cb9f7cd-c17e-49f1-8922-3cb73d1a2f0c" name="Changes" comment="Save point n3ex1 futbol">
+      <change afterPath="$PROJECT_DIR$/src/n3exercici1/Futbol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/n3exercici1/Noticia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/n3exercici1/Redactor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/n3exercici1/calculPreu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/n1exercici2/Cotxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n1exercici2/Cotxe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/n1exercici2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n1exercici2/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699951362751</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Correcció n1exercici2">
+      <created>1699953699634</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699953699634</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +142,7 @@
     <MESSAGE value="Main dins del ex 1" />
     <MESSAGE value="n2exercici1" />
     <MESSAGE value="Correcció n1exercici2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correcció n1exercici2" />
+    <MESSAGE value="Save point n3ex1 futbol" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save point n3ex1 futbol" />
   </component>
 </project>
