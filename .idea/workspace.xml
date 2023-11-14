@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cb9f7cd-c17e-49f1-8922-3cb73d1a2f0c" name="Changes" comment="Main dins del ex 1">
-      <change afterPath="$PROJECT_DIR$/src/n2exercici1/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/n2exercici1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/n2exercici1/Rellotge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/n2exercici1/Smartphone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/n2exercici1/Telèfon.java" afterDir="false" />
+    <list default="true" id="1cb9f7cd-c17e-49f1-8922-3cb73d1a2f0c" name="Changes" comment="Correcció n1exercici2">
+      <change afterPath="$PROJECT_DIR$/src/n3exercici1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/n1excercici2/Cotxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n1exercici2/Cotxe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/n1excercici2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n1exercici2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/n1exercici2/Cotxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n1exercici2/Cotxe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/n1exercici2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n1exercici2/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +30,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Y7EJn5ZvXUOKg1O5pymzeYY750" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,7 +44,7 @@
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.n1exercici2.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="n2exercici1.Main" />
       <module name="Tasca_S1_01_Joan_Caballero" />
@@ -82,8 +80,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.n1exercici2.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.n1exercici1.Main" />
       </list>
     </recent_temporary>
@@ -111,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699949483247</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="n2exercici1">
+      <created>1699951362751</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699951362751</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +132,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Main dins del ex 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main dins del ex 1" />
+    <MESSAGE value="n2exercici1" />
+    <MESSAGE value="Correcció n1exercici2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correcció n1exercici2" />
   </component>
 </project>
