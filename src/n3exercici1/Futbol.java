@@ -3,8 +3,8 @@ package n3exercici1;
 public class Futbol extends Noticia implements calculPreu{
 
     private String comp, club, jug;
-    private static int preuBase = 300;
-    private static int puntBase = 5;
+    private static final int preuBase = 300;
+    private static final int puntBase = 5;
     private int preu, punt;
 
     public Futbol(String titular, String text, String comp, String club, String jug) {
@@ -57,7 +57,7 @@ public class Futbol extends Noticia implements calculPreu{
     }
 
     @Override
-    public int calcularPreuNoticia() {
+    public void calcularPreuNoticia() {
         if(this.comp.equalsIgnoreCase("Champions")){
             this.preu+= 100;
             this.punt+= 3;
@@ -73,6 +73,5 @@ public class Futbol extends Noticia implements calculPreu{
             this.preu+= 50;
             this.punt+= 1;
         }
-        return this.preu;
     }
 }
