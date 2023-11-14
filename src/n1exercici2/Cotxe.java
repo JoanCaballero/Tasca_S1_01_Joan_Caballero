@@ -1,4 +1,4 @@
-package n1excercici2;
+package n1exercici2;
 
 public class Cotxe {
 
