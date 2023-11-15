@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cb9f7cd-c17e-49f1-8922-3cb73d1a2f0c" name="Changes" comment="Save point n3ex1 basquet">
-      <change afterPath="$PROJECT_DIR$/src/n3exercici1/Motociclisme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/n3exercici1/Tenis.java" afterDir="false" />
+    <list default="true" id="1cb9f7cd-c17e-49f1-8922-3cb73d1a2f0c" name="Changes" comment="Save point n3ex1 tenis, motociclisme, F1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/n3exercici1/F1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/F1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/n3exercici1/Motociclisme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/Motociclisme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/n3exercici1/Noticia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/Noticia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/n3exercici1/Redactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/Redactor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,14 +38,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Cata_Ceros">
+}</component>
+  <component name="RunManager" selected="Application.n3exercici1.Main">
     <configuration name="Cata_Ceros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Cata.Cata_Ceros" />
       <module name="Tasca_S1_01_Joan_Caballero" />
@@ -92,8 +92,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="n3exercici1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="n3exercici1.Main" />
+      <module name="Tasca_S1_01_Joan_Caballero" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="n3exercici1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.n3exercici1.Main" />
         <item itemvalue="Application.Cata_Ceros" />
         <item itemvalue="Application.n1exercici2.Main" />
         <item itemvalue="Application.Main" />
@@ -152,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699961037893</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Save point n3ex1 tenis, motociclisme, F1">
+      <created>1699962500881</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699962500881</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Save point n3ex1 tenis, motociclisme, F1">
+      <created>1699962607203</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699962607203</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +230,7 @@
     <MESSAGE value="Correcció n1exercici2" />
     <MESSAGE value="Save point n3ex1 futbol" />
     <MESSAGE value="Save point n3ex1 basquet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save point n3ex1 basquet" />
+    <MESSAGE value="Save point n3ex1 tenis, motociclisme, F1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Save point n3ex1 tenis, motociclisme, F1" />
   </component>
 </project>

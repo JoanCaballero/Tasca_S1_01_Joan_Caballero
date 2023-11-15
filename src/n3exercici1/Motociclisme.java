@@ -15,6 +15,30 @@ public class Motociclisme extends Noticia implements calculPreu{
         this.punt = puntBase;
     }
 
+    public String getEquip() {
+        return equip;
+    }
+
+    public void setEquip(String equip) {
+        this.equip = equip;
+    }
+
+    public int getPreu() {
+        return preu;
+    }
+
+    public void setPreu(int preu) {
+        this.preu = preu;
+    }
+
+    public int getPunt() {
+        return punt;
+    }
+
+    public void setPunt(int punt) {
+        this.punt = punt;
+    }
+
     @Override
     public void calcularPreuNoticia() {
         if(this.equip.equalsIgnoreCase("Honda") || this.equip.equalsIgnoreCase("Yamaha")) {
