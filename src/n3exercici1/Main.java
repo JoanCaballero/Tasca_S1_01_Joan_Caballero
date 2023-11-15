@@ -45,6 +45,7 @@ public class Main {
                             valid = true;
                         }
                     }while(!valid);
+                    valid = false;
                     red = identificarRedactor(DNI);
                     do{
                     System.out.println("""
@@ -188,7 +189,22 @@ public class Main {
                     }while(opcio2 !=6);
                     break;
                 case 4:
-                    //
+                    do {
+                        System.out.println("Introdueix el DNI del redactor");
+                        DNI = sca.nextLine();
+                        if (identificarRedactor(DNI) != null) {
+                            valid = true;
+                        }
+                    }while(!valid);
+                    valid = false;
+                    do {
+                        System.out.println("Introdueix el titular de la Noticia");
+                        titular = sca.nextLine();
+                        if (identificarNoticia(titular) != null) {
+                            valid = true;
+                        }
+                    }while(!valid);
+
                     break;
                 case 5:
                     //
@@ -217,6 +233,15 @@ public class Main {
     }
     public static Redactor identificarRedactor(String DNI){
         for(Redactor red : redactors){
+            if(red.getDNI().equalsIgnoreCase(DNI)){
+                return red;
+            }
+        }
+        return null;
+    }
+
+    public static Noticia identificarNoticia(Redactor red, String titular){
+        for(Noticia not : red.getNoticies()){
             if(red.getDNI().equalsIgnoreCase(DNI)){
                 return red;
             }

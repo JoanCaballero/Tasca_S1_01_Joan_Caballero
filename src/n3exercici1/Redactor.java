@@ -10,6 +10,13 @@ public class Redactor {
     private static final int souBase = 1500;
     private ArrayList<Noticia> noticies = new ArrayList<>();
 
+    public ArrayList<Noticia> getNoticies() {
+        return noticies;
+    }
+
+    public void setNoticies(ArrayList<Noticia> noticies) {
+        this.noticies = noticies;
+    }
 
     public Redactor(String nom, String DNI){
         this.nom = nom;

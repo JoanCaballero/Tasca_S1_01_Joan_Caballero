@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cb9f7cd-c17e-49f1-8922-3cb73d1a2f0c" name="Changes" comment="Save point n3ex1 tenis, motociclisme, F1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1cb9f7cd-c17e-49f1-8922-3cb73d1a2f0c" name="Changes" comment="n3ex1 main case3">
       <change beforePath="$PROJECT_DIR$/src/n3exercici1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/n3exercici1/Noticia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/Noticia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/n3exercici1/Redactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/Redactor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700040236320</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="n3ex1 main case3">
+      <created>1700049167519</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700049167519</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,6 +242,7 @@
     <MESSAGE value="Save point n3ex1 futbol" />
     <MESSAGE value="Save point n3ex1 basquet" />
     <MESSAGE value="Save point n3ex1 tenis, motociclisme, F1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Save point n3ex1 tenis, motociclisme, F1" />
+    <MESSAGE value="n3ex1 main case3" />
+    <option name="LAST_COMMIT_MESSAGE" value="n3ex1 main case3" />
   </component>
 </project>
