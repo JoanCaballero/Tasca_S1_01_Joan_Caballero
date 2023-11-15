@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1cb9f7cd-c17e-49f1-8922-3cb73d1a2f0c" name="Changes" comment="Save point n3ex1 tenis, motociclisme, F1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/n3exercici1/F1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/F1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/n3exercici1/Motociclisme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/Motociclisme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/n3exercici1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/n3exercici1/Noticia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/Noticia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/n3exercici1/Redactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/Redactor.java" afterDir="false" />
     </list>
@@ -180,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699962607203</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Save point n3ex1 tenis, motociclisme, F1">
+      <created>1700040236320</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700040236320</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

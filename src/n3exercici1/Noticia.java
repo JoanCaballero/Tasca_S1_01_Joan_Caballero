@@ -9,6 +9,21 @@ public class Noticia{
         this.text = text;
     }
 
+    public int getPreu() {
+        return preu;
+    }
+
+    public void setPreu(int preu) {
+        this.preu = preu;
+    }
+
+    public int getPunt() {
+        return punt;
+    }
+
+    public void setPunt(int punt) {
+        this.punt = punt;
+    }
 
     public String getTitular() {
         return titular;

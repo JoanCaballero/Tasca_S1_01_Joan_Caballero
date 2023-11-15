@@ -8,12 +8,13 @@ public class Redactor {
     private final String DNI;
     private int sou;
     private static final int souBase = 1500;
-    private ArrayList<Noticia> noticies = new ArrayList<Noticia>();
+    private ArrayList<Noticia> noticies = new ArrayList<>();
 
-    public Redactor(String nom, String DNI, int sou) {
+
+    public Redactor(String nom, String DNI){
         this.nom = nom;
         this.DNI = DNI;
-        this.sou = sou;
+        this.sou = souBase;
     }
 
     public void introduirNoticia(Noticia not){
@@ -33,13 +34,20 @@ public class Redactor {
     }
 
     public void mostrarNoticies(){
-        for(int i = 0; i< noticies.size(); i++){
-            Noticia notI = noticies.get(i);
+        for (Noticia notI : noticies) {
             System.out.println(notI.getTitular() + "\n " + notI.getText());
         }
     }
 
+    public int puntNoticia(Noticia noti){
+        noti.puntuacioIPreuNoticia(noti);
+        return noti.getPunt();
+    }
 
+    public int preuNoticia(Noticia noti){
+        noti.puntuacioIPreuNoticia(noti);
+        return noti.getPreu();
+    }
 
     public String getDNI() {
         return DNI;
