@@ -2,7 +2,7 @@ package n3exercici1;
 
 public class Motociclisme extends Noticia implements calculPreu{
 
-    private String equip;
+    private final String equip;
     private static final int preuBase = 100;
     private static final int puntBase = 3;
 
@@ -15,28 +15,11 @@ public class Motociclisme extends Noticia implements calculPreu{
         this.punt = puntBase;
     }
 
-    public String getEquip() {
-        return equip;
-    }
-
-    public void setEquip(String equip) {
-        this.equip = equip;
-    }
-
     public int getPreu() {
         return preu;
     }
-
-    public void setPreu(int preu) {
-        this.preu = preu;
-    }
-
     public int getPunt() {
         return punt;
-    }
-
-    public void setPunt(int punt) {
-        this.punt = punt;
     }
 
     @Override

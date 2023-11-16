@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     static ArrayList<Redactor> redactors = new ArrayList<>();
+    static Redactor redRemove;
     public static void main(String[] args) {
         int opcio, opcio2, opcio3;
         boolean valid = false;
@@ -26,6 +27,7 @@ public class Main {
             switch (opcio) {
                 case 1:
                     System.out.println("Introdueix el nom del Redactor");
+                    sca.nextLine();
                     nom = sca.nextLine();
                     System.out.println("Introdueix el DNI del redactor");
                     DNI = sca.nextLine();
@@ -33,13 +35,23 @@ public class Main {
                     afegirRedactor(red);
                     break;
                 case 2:
-                    System.out.println("Introdueix el DNI del redactor");
-                    DNI = sca.nextLine();
-                    eliminarRedactor(DNI);
+                    do {
+                        System.out.println("Introdueix el DNI del redactor");
+                        sca.nextLine();
+                        DNI = sca.nextLine();
+                        if (identificarRedactor(DNI) != null) {
+                            eliminarRedactor(DNI);
+                            valid = true;
+                        }else if (DNI.equals("Surt")) {
+                            valid = true;
+                        }
+                    }while(!valid);
+                    valid = false;
                     break;
                 case 3:
                     do {
                         System.out.println("Introdueix el DNI del redactor");
+                        sca.nextLine();
                         DNI = sca.nextLine();
                         if (identificarRedactor(DNI) != null) {
                             valid = true;
@@ -47,6 +59,13 @@ public class Main {
                     }while(!valid);
                     valid = false;
                     red = identificarRedactor(DNI);
+                    System.out.println("Introdueix el titular de la Noticia: ");
+                    //sca.nextLine();
+                    titular = sca.nextLine();
+                    //sca.nextLine();
+                    System.out.println("Introdueix el text de la Noticia:");
+                    text = sca.nextLine();
+                    //sca.nextLine();
                     do{
                     System.out.println("""
                             Quin dels següents esports tracta la noticia?
@@ -58,10 +77,6 @@ public class Main {
                     opcio2 = sca.nextInt();
                         switch (opcio2) {
                             case 1 -> {
-                                System.out.println("Introdueix el titular de la Noticia: ");
-                                titular = sca.nextLine();
-                                System.out.println("Introdueix el text de la Noticia:");
-                                text = sca.nextLine();
                                 System.out.println("""
                                         Aquesta Noticia tracta de\s
                                         1.- Champions League.
@@ -82,27 +97,26 @@ public class Main {
                                 opcio3 = sca.nextInt();
                                 if (opcio3 == 1) {
                                     equip = "Barça";
-                                } else {
-                                    equip = "altre";
-                                }
-                                System.out.println("""
+                                    System.out.println("""
                                         Aquesta Noticia tracta de\s
                                         1.- Ferran Torres i/o Benzema.
                                         2.- Altres jugadors.""");
-                                opcio3 = sca.nextInt();
-                                if (opcio3 == 1) {
-                                    jug = "Benzema";
+                                    opcio3 = sca.nextInt();
+                                    if (opcio3 == 1) {
+                                        jug = "Benzema";
+                                    } else {
+                                        jug = "altre";
+                                    }
                                 } else {
+                                    equip = "altre";
                                     jug = "altre";
                                 }
+
                                 Futbol notiF = new Futbol(titular, text, comp, equip, jug);
                                 red.introduirNoticia(notiF);
+                                opcio2 = 6;
                             }
                             case 2 -> {
-                                System.out.println("Introdueix el titular de la Noticia: ");
-                                titular = sca.nextLine();
-                                System.out.println("Introdueix el text de la Noticia:");
-                                text = sca.nextLine();
                                 System.out.println("""
                                         Aquesta Noticia tracta de\s
                                         1.- Eurolliga.
@@ -128,12 +142,9 @@ public class Main {
                                 }
                                 Basquet notiB = new Basquet(titular, text, comp, equip);
                                 red.introduirNoticia(notiB);
+                                opcio2 = 6;
                             }
                             case 3 -> {
-                                System.out.println("Introdueix el titular de la Noticia: ");
-                                titular = sca.nextLine();
-                                System.out.println("Introdueix el text de la Noticia:");
-                                text = sca.nextLine();
                                 System.out.println("""
                                         Aquesta Noticia tracta de\s
                                         1.- Nadal i/o Djokovic i/o Federer.
@@ -147,12 +158,9 @@ public class Main {
                                 comp = "Roland Garros";
                                 Tenis notiT = new Tenis(titular, text, comp, jug, jug);
                                 red.introduirNoticia(notiT);
+                                opcio2 = 6;
                             }
                             case 4 -> {
-                                System.out.println("Introdueix el titular de la Noticia: ");
-                                titular = sca.nextLine();
-                                System.out.println("Introdueix el text de la Noticia:");
-                                text = sca.nextLine();
                                 System.out.println("""
                                         Aquesta Noticia tracta de\s
                                         1.- Yamaha i/o Honda.
@@ -165,12 +173,9 @@ public class Main {
                                 }
                                 Motociclisme notiM = new Motociclisme(titular, text, equip);
                                 red.introduirNoticia(notiM);
+                                opcio2 = 6;
                             }
                             case 5 -> {
-                                System.out.println("Introdueix el titular de la Noticia: ");
-                                titular = sca.nextLine();
-                                System.out.println("Introdueix el text de la Noticia:");
-                                text = sca.nextLine();
                                 System.out.println("""
                                         Aquesta Noticia tracta de\s
                                         1.- Ferrari i/o Mercedes.
@@ -183,6 +188,7 @@ public class Main {
                                 }
                                 F1 notiF1 = new F1(titular, text, equip);
                                 red.introduirNoticia(notiF1);
+                                opcio2 = 6;
                             }
                             default -> System.out.println("Introdueix un número vàlid");
                         }
@@ -191,32 +197,84 @@ public class Main {
                 case 4:
                     do {
                         System.out.println("Introdueix el DNI del redactor");
+                        sca.nextLine();
                         DNI = sca.nextLine();
                         if (identificarRedactor(DNI) != null) {
                             valid = true;
                         }
                     }while(!valid);
+                    red = identificarRedactor(DNI);
                     valid = false;
                     do {
                         System.out.println("Introdueix el titular de la Noticia");
                         titular = sca.nextLine();
-                        if (identificarNoticia(titular) != null) {
+                        if (identificarNoticia(red, titular) != null) {
+                            if(red.eliminarNoticia(titular)){
+                                System.out.println("Noticia amb el titular: " + titular + " eliminada del redactor amb DNI: " + DNI + ".");
+                                valid = true;
+                            }
+                            else{System.out.println("No s'ha trobat la Noticia amb aquest titular");}
+                        } else if (titular.equals("Surt")) {
                             valid = true;
                         }
                     }while(!valid);
-
                     break;
                 case 5:
-                    //
+                    for(Redactor redactor : redactors){
+                        System.out.println(redactor.getNom().toUpperCase() + ":\n");
+                        redactor.mostrarNoticies();
+                    }
                     break;
                 case 6:
-                    //
+                    do {
+                        System.out.println("Introdueix el DNI del redactor");
+                        sca.nextLine();
+                        DNI = sca.nextLine();
+                        if (identificarRedactor(DNI) != null) {
+                            valid = true;
+                        }
+                    }while(!valid);
+                    red = identificarRedactor(DNI);
+                    valid = false;
+                    do {
+                        System.out.println("Introdueix el titular de la Noticia");
+                        titular = sca.nextLine();
+                        if (identificarNoticia(red, titular) != null) {
+                            Noticia noticia = identificarNoticia(red,titular);
+                            noticia.puntuacioIPreuNoticia(noticia);
+                            System.out.println("Puntuació de la Noticia: " + noticia.getPunt());
+                            valid = true;
+                        } else if (titular.equals("Surt")) {
+                            valid = true;
+                        }
+                    }while(!valid);
                     break;
                 case 7:
-                    //
+                    do {
+                        System.out.println("Introdueix el DNI del redactor");
+                        sca.nextLine();
+                        DNI = sca.nextLine();
+                        if (identificarRedactor(DNI) != null) {
+                            valid = true;
+                        }
+                    }while(!valid);
+                    red = identificarRedactor(DNI);
+                    valid = false;
+                    do {
+                        System.out.println("Introdueix el titular de la Noticia");
+                        titular = sca.nextLine();
+                        if (identificarNoticia(red, titular) != null) {
+                            Noticia noticia = identificarNoticia(red,titular);
+                            noticia.puntuacioIPreuNoticia(noticia);
+                            System.out.println("Preu de la Noticia: " + noticia.getPreu());
+                            valid = true;
+                        } else if (titular.equals("Surt")) {
+                            valid = true;
+                        }
+                    }while(!valid);
                     break;
                 case 8:
-                    //
+                    System.out.println("Fins aviat!");
                     break;
                 default:
                     System.out.println("Introdueix un número vàlid");
@@ -242,20 +300,26 @@ public class Main {
 
     public static Noticia identificarNoticia(Redactor red, String titular){
         for(Noticia not : red.getNoticies()){
-            if(red.getDNI().equalsIgnoreCase(DNI)){
-                return red;
+            if(not.getTitular().equalsIgnoreCase(titular)){
+                return not;
             }
         }
+        System.out.println("No existeix una Noticia d'aquest redactor amb el titular donat.");
         return null;
     }
 
     public static void eliminarRedactor(String DNI){
+        boolean trobat = false;
         for (Redactor red : redactors) {
             if (red.getDNI().equalsIgnoreCase(DNI)) {
-                redactors.remove(red);
-                System.out.println("Redactor Eliminat");
+                redRemove = red;
+                trobat = true;
             }
         }
-        System.out.println("No s'ha trobat cap redactor a la redacció amb aquest DNI");
+        if(trobat){
+            redactors.remove(redRemove);
+            System.out.println("Redactor amb DNI " + DNI + " eliminat.");
+        }
+        else{System.out.println("No s'ha trobat cap redactor a la redacció amb aquest DNI");}
     }
 }
