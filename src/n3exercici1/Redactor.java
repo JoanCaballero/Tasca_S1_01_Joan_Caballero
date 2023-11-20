@@ -4,19 +4,18 @@ import java.util.ArrayList;
 
 public class Redactor {
 
-    private String nom;
+    private final String nom;
     private final String DNI;
     private int sou;
     private static final int souBase = 1500;
     private ArrayList<Noticia> noticies = new ArrayList<>();
 
+    private Noticia noticiaRemove;
+
     public ArrayList<Noticia> getNoticies() {
         return noticies;
     }
 
-    public void setNoticies(ArrayList<Noticia> noticies) {
-        this.noticies = noticies;
-    }
 
     public Redactor(String nom, String DNI){
         this.nom = nom;
@@ -28,32 +27,24 @@ public class Redactor {
         noticies.add(not);
     }
 
-    public void eliminarNoticia(String titular){
+    public boolean eliminarNoticia(String titular){
         boolean bol = false;
-        for(int i = 0; i< noticies.size() || bol; i++){
-            Noticia notI = noticies.get(i);
-            String titI = notI.getTitular();
-            if(titular.equalsIgnoreCase(titI)){
-                noticies.remove(i);
+        for(Noticia notI : noticies){
+            if(titular.equalsIgnoreCase(notI.getTitular())){
+                noticiaRemove = notI;
                 bol = true;
             }
         }
+        if(bol){
+            noticies.remove(noticiaRemove);
+        }
+        return bol;
     }
 
     public void mostrarNoticies(){
         for (Noticia notI : noticies) {
-            System.out.println(notI.getTitular() + "\n " + notI.getText());
+            System.out.println(notI.getTitular() + "\n " + notI.getText() + "\n");
         }
-    }
-
-    public int puntNoticia(Noticia noti){
-        noti.puntuacioIPreuNoticia(noti);
-        return noti.getPunt();
-    }
-
-    public int preuNoticia(Noticia noti){
-        noti.puntuacioIPreuNoticia(noti);
-        return noti.getPreu();
     }
 
     public String getDNI() {
@@ -62,17 +53,5 @@ public class Redactor {
 
     public String getNom() {
         return nom;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    public int getSou() {
-        return sou;
-    }
-
-    public void setSou(int sou) {
-        this.sou = sou;
     }
 }

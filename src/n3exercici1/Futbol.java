@@ -2,7 +2,7 @@ package n3exercici1;
 
 public class Futbol extends Noticia implements calculPreu{
 
-    private String comp, club, jug;
+    private final String comp, club, jug;
     private static final int preuBase = 300;
     private static final int puntBase = 5;
     private int preu, punt;
@@ -19,42 +19,10 @@ public class Futbol extends Noticia implements calculPreu{
     public int getPreu() {
         return preu;
     }
-
-    public void setPreu(int preu) {
-        this.preu = preu;
-    }
-
     public int getPunt() {
         return punt;
     }
 
-    public void setPunt(int punt) {
-        this.punt = punt;
-    }
-
-    public String getComp() {
-        return comp;
-    }
-
-    public void setComp(String comp) {
-        this.comp = comp;
-    }
-
-    public String getClub() {
-        return club;
-    }
-
-    public void setClub(String club) {
-        this.club = club;
-    }
-
-    public String getJug() {
-        return jug;
-    }
-
-    public void setJug(String jug) {
-        this.jug = jug;
-    }
 
     @Override
     public void calcularPreuNoticia() {
@@ -73,5 +41,6 @@ public class Futbol extends Noticia implements calculPreu{
             this.preu+= 50;
             this.punt+= 1;
         }
+
     }
 }

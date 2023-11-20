@@ -2,7 +2,7 @@ package n3exercici1;
 
 public class Basquet extends Noticia implements calculPreu{
 
-    private String comp, club;
+    private final String comp, club;
     private static final int preuBase = 250;
     private static final int puntBase = 4;
     private int preu, punt;
@@ -15,36 +15,11 @@ public class Basquet extends Noticia implements calculPreu{
         this.punt = puntBase;
     }
 
-    public String getComp() {
-        return comp;
-    }
-
-    public void setComp(String comp) {
-        this.comp = comp;
-    }
-
-    public String getClub() {
-        return club;
-    }
-
-    public void setClub(String club) {
-        this.club = club;
-    }
-
     public int getPreu() {
         return preu;
     }
-
-    public void setPreu(int preu) {
-        this.preu = preu;
-    }
-
     public int getPunt() {
         return punt;
-    }
-
-    public void setPunt(int punt) {
-        this.punt = punt;
     }
 
     @Override
