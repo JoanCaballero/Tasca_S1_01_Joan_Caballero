@@ -1,10 +1,5 @@
 package n1exercici1;
 
-import n1exercici1.Corda;
-import n1exercici1.Instruments;
-import n1exercici1.Percussió;
-import n1exercici1.Vent;
-
 public class Main {
     public static void main(String[] args) {
 

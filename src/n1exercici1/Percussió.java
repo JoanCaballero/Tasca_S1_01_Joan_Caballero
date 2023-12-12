@@ -1,6 +1,6 @@
 package n1exercici1;
 
-public class Percussió extends Instruments{
+public class Percussió extends Instrument {
 
     public Percussió(String nom, float preu) {
         super(nom, preu);

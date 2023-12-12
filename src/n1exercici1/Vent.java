@@ -1,6 +1,6 @@
 package n1exercici1;
 
-public class Vent extends Instruments{
+public class Vent extends Instrument {
 
     public Vent(String nom, float preu) {
         super(nom, preu);

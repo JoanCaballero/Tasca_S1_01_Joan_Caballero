@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cb9f7cd-c17e-49f1-8922-3cb73d1a2f0c" name="Changes" comment="n3ex1 main case3">
-      <change beforePath="$PROJECT_DIR$/src/n3exercici1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/n3exercici1/Redactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/n3exercici1/Redactor.java" afterDir="false" />
+    <list default="true" id="1cb9f7cd-c17e-49f1-8922-3cb73d1a2f0c" name="Changes" comment="workspace.xml?">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +34,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/formacio/Desktop/JC/Tasca_S1_01_Joan_Caballero",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.n3exercici1.Main">
     <configuration name="Cata_Ceros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Cata.Cata_Ceros" />
@@ -212,11 +212,6 @@
             <State />
           </value>
         </entry>
-      </map>
-    </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="6d4b77ef-1973-4cef-92f4-1222d79d6300" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="RECENT_FILTERS">
